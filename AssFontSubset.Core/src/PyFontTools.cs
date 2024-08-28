@@ -274,7 +274,7 @@ public class PyFontTools(string pyftsubset, string ttx, ILogger? logger)
             ssf.OriginalFontFile.FullName,
             $"--text-file={ssf.CharactersFile!}",
             $"--output-file={ssf.SubsetFontFileTemp!}",
-            "--name-languages=\*",
+            "--name-languages=\\*",
             $"--font-number={ssf.TrackIndex}",
             // "--no-layout-closure",
             $"--layout-features={string.Join(",", enableFeatures)}",
